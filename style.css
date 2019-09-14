@@ -1,0 +1,99 @@
+#main-menu.navbar {
+z-index: 200;}
+.brief-post{
+    text-align: justify;
+    min-height: 175px;
+    font-family: IRANSans;
+    padding: 7px;
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+.right{
+    float: right !important;
+    margin-right: 90px;
+}
+.left{
+    float: left !important;
+    margin-left: 70px;
+}
+.brief-post h2 a{
+    color: black;
+    font-size: 18px;
+    font-family: IRANSans;
+    line-height: 1em;
+}
+.brief-post h2{
+    min-height: 60px;
+}
+.brief-post h2 a:hover{
+    color: #5c5b5b;
+}
+.list-blog-image{
+    float: right;
+    padding: 5px;
+}
+.footer-links{
+    background: url('img/header-bg.jpg') no-repeat 0 0 ;
+    padding: 30px 0px 40px;
+    font-family: IRANSans;
+
+}
+.footer-links h5{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: IRANSans !important;
+}
+.footer-links, .footer-links li, .footer-links li a, .footer-links li a:hover, .footer-links h4, .footer-links h5{
+    color: #fff;
+    font-weight: 400;
+}
+.footer-links ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 15px
+
+}
+.footer-links p{
+    font-family: IRANSans;
+    font-size: 11px;
+}
+footer a:hover{
+color: #31A1B9 !important;
+background-color: #ddf2f7;
+padding: 5px;
+}
+footer a{
+    font-family: IRANSans;
+    margin-bottom: 15px
+}
+.copyright{
+    background: #1c1c1c none repeat scroll 0 0;
+    color: white;
+    padding: 18px 0px 8px;
+}
+#prev-button,#next-button{
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    background-color: white;
+    color: #37B3CD;
+    position: absolute;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.product-wrapper{
+    position: relative;
+}
+#prev-button{
+    top: 7px;
+    left: 47px;
+    padding-left: 2px;
+}
+#next-button{
+    top: 7px;
+    left:12px;
+    padding-right: 2px;
+}

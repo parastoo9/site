@@ -112,6 +112,8 @@ body{
     padding-bottom: 10px;
     margin-top: 40px;
     min-height: 45px;
+    font-family: IRANSans;
+
 }
 .col-sm-3{
     width: 25%;
@@ -124,6 +126,8 @@ body{
     text-align: center;
     min-height: 320px;
     position: relative;
+    margin-top: 10px;
+
 }
 .main-container img{
     margin: 0 auto;
@@ -136,6 +140,10 @@ body{
     font-size: 9pt;
     color: #1c1c1c;
     margin-top: 5px;
+    font-family: IRANSans;
+}
+.product-title a:hover{
+    color: #5c5b5b;
 }
 .product-price{
     color: red;
@@ -144,6 +152,8 @@ body{
     bottom: 60px;
     left:10px;
     right: 10px;
+    font-family: IRANSans;
+
 }
 .product-col .btn-cart{
     background: rgba(0,0,0,0) linear-gradient(55deg,#1c1c1c 118px,transparent 117px) repeat scroll 0 0;
@@ -158,8 +168,78 @@ body{
     left:30px;
     right:50px;
 }
+.product-col .btn-cart:hover{
+    background: rgba(0,0,0,0) linear-gradient(55deg,#37B3CD 118px,transparent 117px) repeat scroll 0 0;
 
+}
+.brief-post{
+    text-align: justify;
+    min-height: 175px;
+    font-family: IRANSans;
+    padding: 7px;
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+.right{
+    float: right !important;
+    margin-right: 90px;
+}
+.left{
+    float: left !important;
+    margin-left: 70px;
+}
+.brief-post h2 a{
+    color: black;
+    font-size: 18px;
+    font-family: IRANSans;
+    line-height: 1em;
+}
+.brief-post h2{
+    min-height: 60px;
+}
+.brief-post h2 a:hover{
+    color: #5c5b5b;
+}
+.list-blog-image{
+    float: right;
+    padding: 5px;
+}
+.footer-links{
+    background: url('img/header-bg.jpg') no-repeat 0 0 ;
+    padding: 30px 0px 40px;
+    font-family: IRANSans;
 
+}
+.footer-links h5{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: IRANSans !important;
+}
+.footer-links, .footer-links li, .footer-links li a, .footer-links li a:hover, .footer-links h4, .footer-links h5{
+    color: #fff;
+    font-weight: 400;
+}
+.footer-links ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 15px
+
+}
+.footer-links p{
+    font-family: IRANSans;
+    font-size: 11px;
+}
+footer a:hover{
+color: #31A1B9 !important;
+background-color: #ddf2f7;
+padding: 5px;
+}
+footer a{
+    font-family: IRANSans;
+    margin-bottom: 15px
+}
 
 
 
