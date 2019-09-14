@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>zhiar online</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="static/fonts/css/fontiran.css" rel="stylesheet" />
+    <link href="static/fonts/fonts/ttf/IRANSansWeb.ttf" rel="stylesheet" />
+    <link href="static/fonts/fonts/woff/IRANSansWeb.woff" rel="stylesheet" />
+    <link href="static/fonts/fonts/woff2/IRANSansWeb.woff2" rel="stylesheet" />
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="static/bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="static/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="stylesite.css" rel="stylesheet" />
+    <link href="static/slider/nivo-slider.css" rel="stylesheet" />
+    <link href="static/slider/themes/default/default.css" rel="stylesheet" />
+    <script src="static/jquery/jquery-1.9.0.min.js"></script>
+    <script src="static/slider/jquery.nivo.slider.js"></script>
+</head>
+
+<body>
+    <span id="cart-container-float" class="col-xs-12 shoppingcart-container col-sm-2">
+        <div class="center">
+            <a href="/">
+                <span id="cart">سبد خرید(0) کالا</span>
+            </a>
+            <div class="clear">جمع کل: 0 تومان</div>
+            <div class="clear" style="height:  5px"></div>
+        </div>
+    </span>
+    <div class="header">
+        <div class="container">
+            <div class="head-top">
+                <div class="row">
+                    <div class="col-sm-8 col-xs-12">
+                        <div class="header-link">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a href="/">صفحه اصلی</a></li>
+                                <li><a href="/login">ورود</a></li>
+                                <li><a href="/register">عضویت</a></li>
+                                <li><a href="/support">ارتباط با ما</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12"></div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-12">
+                        <form action="http://www.google.com" method="get">
+                            <div class="search-box">
+                                <input type="text" id="search" name="search" placeholder="جستجو" />
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div id="logo">
+                            <a href="/">
+                                <img class="img-responsive" src="image/logo-zhiaronline.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div id="cart" class="btn-group btn-block">
+                            <div class="" id="cart-container">
+                                <button class="btn btn-block dropdown-toggle btn-lg" data-toggle="dropdown"
+                                    type="button">
+                                    <i class="fa fa-shopping-cart fa-2x"></i>
+                                    <span class="">سبد خرید:</span>
+                                    <span id="cart-total">محصولی انتخاب نشده است</span>
+                                    <i class="fa fa-cart-down"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="main-menu" class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="btn btn-navbar navbar-toggle" data-target=".navbar-cat-collapse" data-toggle="collapse"
+                    type="button">
+                    <span class="sr-only">منو</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-cat-collapse  navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/blog">مقالات آموزشی</a></li>
+                    <li><a href="/latest">جدیدترین ویدیوها</a></li>
+                    <li><a href="/mostsold">محبوبترین ویدیوها</a></li>
+                    <li><a href="/addfund">پرداخت اینترنتی</a></li>
+                    <li><a href="/shoppingcart">سبد خرید</a></li>
+                    <li><a href="/pages/page-2.html">اپلیکیشن آندرویدی</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="jquery-script-center">
+        <div id="slider-1" class="window-slider">
+                <!-- TOP LEFT SLIDER -->
+                <div class="tl-window">
+                    <img src="https://source.unsplash.com/400x250/?nature">
+                    <img src="https://source.unsplash.com/400x250/?fitness">
+                  </div>
+        
+                  <!-- TOP RIGHT SLIDER -->
+                  <div class="tr-window">
+                    <img src="https://source.unsplash.com/400x250/?people">
+                    <img src="https://source.unsplash.com/400x250/?beauty">
+                  </div>
+        
+                  <!-- BOTTOM LEFT SLIDER -->
+                  <div class="bl-window">
+                    <img src="https://source.unsplash.com/400x250/?water">
+                    <img src="https://source.unsplash.com/400x250/?girl">
+                  </div>
+        
+                  <!-- BOTTOM RIGHT SLIDER -->
+                  <div class="br-window">
+                    <img src="https://source.unsplash.com/400x250/?future">
+                    <img src="https://source.unsplash.com/400x250/?game">
+                  </div>
+              </div>
+      </div>
+              
+            
+
+
+
+    <div class="main-container container">
+        <section class="products-list">
+            <div class="container">
+                <div class="row">
+                    <h2 class="heading_with_border">ویدیو های منتخب</h2>
+                    <div class="clear" style="height:15px;"></div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope="" itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="موی تای- تکنیک های پایه" />
+                            <a href="/muay-thai-the-technical-basis.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx1.jpg"
+                                        alt="موی تای- تکنیک های پایه" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a href="/">موی تای-تکنیک های پایه</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="70000">
+                                    <meta itemprop="price" content="IRR">
+                                </span>
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" type="button">
+                                    <i class="fa fa-shopping-cart">
+                                    </i>
+                                    اضافه به سبد خرید
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope="" itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="تمرینات کونگ فو با سلاح و بدون سلاح" />
+                            <a href="/kung-fu-techniques-with-and-without-weapons.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx.2.jpg"
+                                        alt="تمرینات کونگ فو با سلاح و بدون سلاح" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/kung-fu-techniques-with-and-without-weapons.html">تمرینات کونگ
+                                    فو با سلاح و بدون سلاح</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="443" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="تمرین و کشش" />
+                            <a href="/workout-and-stretching.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx3.jpg"
+                                        alt="تمرین و کشش" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/workout-and-stretching.html">تمرین و کشش</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="442" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="آموزش پا باز (180 درجه)" />
+                            <a href="/do-the-splits.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx4.jpg"
+                                        alt="آموزش پا باز (180 درجه)" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/do-the-splits.html">آموزش پا باز (۱۸۰ درجه)</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="441" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="فول کنتاکت از مبتدی تا پیشرفته" />
+                            <a href="/full-contact-from-beginner-to-advanced.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx5.jpg"
+                                        alt="فول کنتاکت از مبتدی تا پیشرفته" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/full-contact-from-beginner-to-advanced.html">فول کنتاکت از
+                                    مبتدی تا پیشرفته</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="440" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="آموزش ضربات پیشرفته" />
+                            <a href="/progression-kicks.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx6.jpg"
+                                        alt="آموزش ضربات پیشرفته" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/progression-kicks.html">آموزش ضربات پیشرفته</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="439" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="ضربات آکروباتیک" />
+                            <a href="/acrobatic-kicks.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx7.jpg"
+                                        alt="ضربات آکروباتیک" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/acrobatic-kicks.html">ضربات آکروباتیک</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="438" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="آموزش کومبو - ضربات پای ترکیبی" />
+                            <a href="/combo.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx8.jpg"
+                                        alt="آموزش کومبو - ضربات پای ترکیبی" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/combo.html">آموزش کومبو - ضربات پای ترکیبی</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="437" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="نانچیکو" />
+                            <a href="/nunchaku.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx9.jpg"
+                                        alt="نانچیکو" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/nunchaku.html">نانچیکو</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="436" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="77 ضربه پا" />
+                            <a href="/77-kicks.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx10.jpg"
+                                        alt="77 ضربه پا" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/77-kicks.html">۷۷ ضربه پا</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۱۱/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="110000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="435" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="تونفا- کبری" />
+                            <a href="/tonfa-cobra-initiation.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx11.jpg"
+                                        alt="تونفا- کبری" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/tonfa-cobra-initiation.html">تونفا- کبری</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۶/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="60000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="434" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="آموزش نانچیکو " />
+                            <a href="/learn-nunchaku.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx12.jpg"
+                                        alt="آموزش نانچیکو " />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/learn-nunchaku.html">آموزش نانچیکو </a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="433" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="جوجیتسوی برزیلی- تکنیک های چوک، پایان دادن و گارد نیمه" />
+                            <a href="/finalization-and-guard-passing-techniques.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx13.jpg"
+                                        alt="جوجیتسوی برزیلی- تکنیک های چوک، پایان دادن و گارد نیمه" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/finalization-and-guard-passing-techniques.html">جوجیتسوی
+                                    برزیلی- تکنیک های چوک، پایان دادن و گارد نیمه</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="432" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="جوجیتسو برزیلی- ترکیبات قلاب هنرهای رزمی" />
+                            <a href="/grappling-martial-arts-combinations.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx14.jpg"
+                                        alt="جوجیتسو برزیلی- ترکیبات قلاب هنرهای رزمی" />
+                                </div>
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/grappling-martial-arts-combinations.html">جوجیتسو برزیلی-
+                                    ترکیبات قلاب هنرهای رزمی</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="431" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="more-info"></span>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="جوجیتسوی برزیلی-  BERIMBOLO - CROSS-FACE " />
+                            <a href="/berimbolo-cross-face.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx15.jpg"
+                                        alt="جوجیتسوی برزیلی-  BERIMBOLO - CROSS-FACE " />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/berimbolo-cross-face.html">جوجیتسوی برزیلی- BERIMBOLO -
+                                    CROSS-FACE </a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+
+                            </div>
+                            <div class="cart-button button-group add-to-cart-container">
+                                <button class="btn btn-cart add-to-cart" data-id="430" type="button">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    اضافه به سبد خرید
+
+                                </button>
+
+                                <span class="more-info"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="product-col" itemscope="" itemtype="http://schema.org/Product">
+                            <meta itemprop="name" content="جوجیتسوی برزیلی- تکنیک های پیشرفته" />
+                            <a href="/brazilian-jiu-jitsu-advanced-techniques.html">
+                                <div class="product-picture">
+                                    <img class="img-responsive" itemprop="image" src="image/thumbnail.ashx16.jpg"
+                                        alt="جوجیتسوی برزیلی- تکنیک های پیشرفته" />
+                                </div>
+
+                            </a>
+                            <h3 class="product-title">
+                                <a itemprop="url" href="/brazilian-jiu-jitsu-advanced-techniques.html">جوجیتسوی برزیلی-
+                                    تکنیک های
+                                    پیشرفته</a>
+                            </h3>
+                            <div class="product-price">
+                                <span>۷/۰۰۰ تومان</span>
+                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="price" content="70000">
+                                    <meta itemprop="priceCurrency" content="IRR" />
+                                </span>
+                                <div class="cart-button button-group add-to-cart-container">
+                                    <button class="btn btn-cart add-to-cart" data-id="429" type="button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        اضافه به سبد خرید
+
+                                    </button>
+
+                                    <span class="more-info"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="clear" style="height:5px;"></div>
+
+
+    <div class="clear" style="height:30px;"></div>
+    <h2 class="heading-with-border">آخرین مطالب وبلاگ</h2>
+    <div class="clear" style="height:10px;"></div>
+    <div class="col-sm-6 col-xs-12">
+
+
+        <div class="brief-post right">
+            <h2><a href="/blog/awesome-reasons-to-try-capoeira.html">
+                    ویدیو:
+                    5 دلیل جذاب برای پیوستن به کاپوئرا
+                </a></h2>
+            <div class="clear" style="height: 5px;"></div>
+            <div class="list-blog-image">
+                <a href="/blog/awesome-reasons-to-try-capoeira.html">
+                    <img src="image/thumbnail.ashx21.jpg" alt="5 دلیل جذاب برای پیوستن به کاپوئرا" />
+                </a>
+            </div>
+
+
+
+
+            هیچ چیز مانند کاپوئرا شبیه رقص نیست. هر وقت نمایش داده می شود ترکیب دوست داشتنی از حرکات شاد، موسیقی،
+            آکروبات های شگفت انگیز و مهارت است. کاپوئرا در ابتدا به عنوان یک هنر رزمی که به صورت رقص پنهان شده بود ایجاد
+            شد، به همین دلیل جای تعجب نیست که
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+        <div class="brief-post left">
+            <h2>
+                <a href="/"> چگونه کاراته اوکیناوا با کاراته ژاپنی متفاوت است؟ </a>
+            </h2>
+            <div class="clear" style="height: 5px;"></div>
+            <div class="list-blog-image">
+                <a href="/">
+                    <img src="image/thumbnail.ashx31.jpg" alt=" چگونه کاراته اوکیناوا با کاراته ژاپنی متفاوت است؟ " />
+                </a>
+            </div>
+            اوکیناوا علاوه براینکه تنها جزیره گرمسیری ژاپن است بلکه دورترین جزیره آن نیز به حساب می آید
+            که در جنوبی ترین قسمت ژاپن قرار دارد. به همین دلیل اوکیناوا فرهنگی متفاوت با ژاپن در زندگی افراد
+            و کاراته دارد. همانطور که می دانید و بارها در مقالات
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+
+
+        <div class="brief-post right">
+            <h2><a href="/blog/how-to-defend-against-a-knife-attack-with-martial-arts.html">
+                    ویدیو:
+                    چگونه می توان با هنرهای رزمی در مقابل چاقو از خود دفاع کرد
+                </a></h2>
+            <div class="clear" style="height: 5px;"></div>
+            <div class="list-blog-image">
+                <a href="/blog/how-to-defend-against-a-knife-attack-with-martial-arts.html">
+                    <img src="image/thumbnail.ashx23.jpg"
+                        alt="چگونه می توان با هنرهای رزمی در مقابل چاقو از خود دفاع کرد" />
+                </a>
+            </div>
+
+
+
+
+
+
+            وقتی صحبت از دفاع شخصی می شود در برابر سلاح چیزهای زیادی وجود ندارد. منظور از سلاح در این مقاله چاقو است.
+            حمله با چاقو می تواند از جلو یا پشت اتفاق بیافتد. حمله با چاقو مستلزم نزدیک بودن به فرد مورد نظر است و این
+            یکی از مزایایی است که اگر
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+
+
+        <div class="brief-post left">
+            <h2><a href="/blog/weakest-spots-to-aim-for-if-you-are-attacked.html">
+                    5 نقطه ضعیف بدن که برای دفاع از خود باید به آنها ضربه بزنید
+                </a></h2>
+            <div class="clear" style="height: 5px;"></div>
+            <div class="list-blog-image">
+                <a href="/blog/weakest-spots-to-aim-for-if-you-are-attacked.html">
+                    <img src="image/thumbnail.ashx24.jpg"
+                        alt="5 نقطه ضعیف بدن که برای دفاع از خود باید به آنها ضربه بزنید" />
+                </a>
+                <div class="col-sm-6 col-xs-12">
+
+
+                    <div class="brief-post right">
+                        <h2><a href="/blog/the-most-simple-self-defense-moves-you-should-learn.html">
+                                ساده ترین حرکات دفاع شخصی که باید یاد بگیرید
+                            </a></h2>
+                        <div class="clear" style="height: 5px;"></div>
+                        <div class="list-blog-image">
+                            <a href="/blog/the-most-simple-self-defense-moves-you-should-learn.html">
+                                <img src="image/thumbnail.ashx25.jpg"
+                                    alt="ساده ترین حرکات دفاع شخصی که باید یاد بگیرید" />
+                            </a>
+                        </div>
+
+
+
+
+                        <br />
+                        شما در 4 رشته رزمی کمربند مشکی دارید و همچنین جوجیتسوی برزیلی را ابداع کرده اید. اما آیا واقعا
+                        می دانید که در شرایط عادی زندگی اگر درگیری پیش آمد چگونه از خود دفاع کنید؟ مطمئنا ما توصیه نمی
+                        کنیم که هر کدام از این حرکات را برای حمله به
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+
+
+                    <div class="brief-post left">
+                        <h2><a href="/blog/this-is-the-quickest-way-to-stop-a-fight.html">
+                                ویدیو:
+                                سریع ترین راه برای متوقف کردن یک مبارزه
+                            </a></h2>
+                        <div class="clear" style="height: 5px;"></div>
+                        <div class="list-blog-image">
+                            <a href="/blog/this-is-the-quickest-way-to-stop-a-fight.html">
+                                <img src="image/thumbnail.ashx26.jpg" alt="سریع ترین راه برای متوقف کردن یک مبارزه" />
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        وقتی افراد زیادی در یک جمع باشند نظرات متفاوتی از آنها خواهید شنید. مثلا اگر یک سوال ساده اینکه
+                        بهترین هنر رزمی کدام است؟ بپرسید گفتگویی سالم بین آنها درخواهد گرفت. با این حال، وقتی سوال
+                        بهترین راه برای پایان دادن به مبارزه مطرح می شود یک
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+
+
+                    <div class="brief-post right">
+                        <h2><a href="/blog/is-this-martial-arts-or-just-plain-cruelty.html">
+                                ویدیو:
+                                کشتی با گاو، هنر رزمی یا ظلم در حق حیوانات
+                            </a></h2>
+                        <div class="clear" style="height: 5px;"></div>
+                        <div class="list-blog-image">
+                            <a href="/blog/is-this-martial-arts-or-just-plain-cruelty.html">
+                                <img src="image/thumbnail.ashx27.jpg"
+                                    alt="کشتی با گاو، هنر رزمی یا ظلم در حق حیوانات" />
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        کشتی با گاو که در چین به آن Guanniu می گویند در بهترین حالت یک ورزش تفرقه آور است. هرچند که این
+                        کشتی به اندازه فستیوال های گاو بازی اسپانیا بحث برانگیز نیست چون در آن هیچ گاوی کشته نمی شود اما
+                        باز هم سوالات اخلاقی خاصی مطرح می شود. اما آنچه
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+
+
+                    <div class="brief-post left">
+                        <h2><a href="/blog/martial-art-of-capoeira.html">
+                                هنر رزمی کاپوئرا
+                            </a></h2>
+                        <div class="clear" style="height: 5px;"></div>
+                        <div class="list-blog-image">
+                            <a href="/blog/martial-art-of-capoeira.html">
+                                <img src="image/thumbnail.ashx28.jpg" alt="هنر رزمی کاپوئرا" />
+                            </a>
+                        </div>
+
+
+
+
+                        <br />
+                        تا آنجا که سیستم های مبارزه و فعالیت های بدنی پیش می روند، چیزی سرگرم کننده تر از هنر رزمی
+                        کاپوئرا وجود ندارد. کاپوئرا به خاطر جلوه های زیبا و لگدهای آکروباتیکش مشهور است و همانقدر که
+                        زیبا است خطرناک نیز هست. کاپوئرا (capoeira) بعد از
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+
+
+                    <div class="brief-post right">
+                        <h2><a href="/blog/weaknesses-of-muay-thai.html">
+                                نگاهی به نقاط ضعف واقعی موی تای
+                            </a></h2>
+                        <div class="clear" style="height: 5px;"></div>
+                        <div class="list-blog-image">
+                            <a href="/blog/weaknesses-of-muay-thai.html">
+                                <img src="image/thumbnail.ashx28.jpg" alt="نگاهی به نقاط ضعف واقعی موی تای" />
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        همه ما می دانیم که موی تای یکی از سنت ها برای هر رزمی کار MMA است. ضربات قدرتمند و آرنج های قوی
+                        موی تای در رینگ مبارزه کشنده هستند، همچنین موی تای موضع مناسبی برای دفع حملات غافلگیر کننده
+                        دارد. با این حال، هر هنر رزمی خوبی باز نقاط ضعفی دارد،
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+
+
+                    <div class="brief-post left">
+                        <h2><a href="/blog/the-mma-fighter-who-only-has-one-hand.html">
+                                ویدیو:
+                                فایتر mma که فقط یک دست دارد
+                            </a></h2>
+                        <div class="clear" style="height: 5px;"></div>
+                        <div class="list-blog-image">
+                            <a href="/blog/the-mma-fighter-who-only-has-one-hand.html">
+                                <img src="image/thumbnail.ashx29.jpg" alt="فایتر mma که فقط یک دست دارد" />
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        نیک نیول (Nick Newell) جوان 27 ساله آمریکایی است که در 21 دوره مسابقات جهانی Xtreme توانست عنوان
+                        قهرمانی این دوره از مسابقات را کسب کند. اما با وجود چنین موفقیت بزرگی، نکته جالب کمربند قهرمانی
+                        نیست که کسب کرده است. مبارز هنرهای رزمی ترکیبی
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        </section>
+    </div>
+    <footer id="footer-area">
+        <div class="footer-links">
+            <div class="container">
+                <div class="col-sm-4 col-xs-12">
+                    <h5>آخرین مقالات</h5>
+                    <ul>
+                        <li>
+                            <i class="fa fa-angle-double-left"></i> <a
+                                href="/blog/awesome-reasons-to-try-capoeira.html">
+                                ویدیو:
+                                5 دلیل جذاب برای پیوستن به کاپوئرا
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-left"></i> <a
+                                href="/blog/hard-truths-about-martial-arts-that-most-people-dont-want-to-believe.html">
+                                5 حقیقت سخت درباره هنرهای رزمی که اکثر مردم نمی خواهند باور کنند
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-left"></i> <a
+                                href="/blog/how-to-defend-against-a-knife-attack-with-martial-arts.html">
+                                ویدیو:
+                                چگونه می توان با هنرهای رزمی در مقابل چاقو از خود دفاع کرد
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-left"></i> <a
+                                href="/blog/weakest-spots-to-aim-for-if-you-are-attacked.html">
+                                5 نقطه ضعیف بدن که برای دفاع از خود باید به آنها ضربه بزنید
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-left"></i> <a
+                                href="/blog/the-most-simple-self-defense-moves-you-should-learn.html">
+                                ساده ترین حرکات دفاع شخصی که باید یاد بگیرید
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 hidden-xs"></div>
+                <div class="col-sm-4 col-xs-12">
+                    <h5>آدرس و شماره تلفن</h5>
+                    <p dir="rtl">
+                        آدرس:</p>
+                    <p dir="rtl">
+                        کردستان - بانه - خیابان صلاح الدین شمالی - ساختمان آفتاب درخشان - طبقه 4 شرکت ژیار سافت</p>
+                    <p dir="rtl">
+                        تلفن:08734263901</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p class="pull-left">کلیه حقوق این سایت متعلق به شرکت ژیار سافت می باشد.</p>
+
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/combres.axd/MainJs/-469830796/"></script>
+    <script type="text/javascript" src="/combres.axd/SiteJs/58522037/"></script>
+
+
+</body>
+
+</html>
