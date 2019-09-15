@@ -245,19 +245,20 @@ footer a{
     color: white;
     padding: 18px 0px 8px;
 }
+.slider-wrapper{
+    position: relative;
+}
 #prev-button,#next-button{
     width: 30px;
     height: 30px;
     padding-top: 2px;
     background-color: white;
-    color: #37B3CD;
+    color: red;
     position: absolute;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
-.product-wrapper{
-    position: relative;
 }
 #prev-button{
     top: 7px;
